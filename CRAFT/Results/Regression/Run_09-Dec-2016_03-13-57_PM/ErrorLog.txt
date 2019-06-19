@@ -1,0 +1,29 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Started InternetExplorerDriver server (32-bit)
+2.53.1.0
+Listening on port 1529
+Only local connections are allowed
+Started InternetExplorerDriver server (32-bit)
+2.53.1.0
+Listening on port 28692
+Only local connections are allowed
+Exception in thread "pool-1-thread-1" java.lang.NullPointerException
+	at supportlibraries.DriverScript.qcOneTimeSetUp(DriverScript.java:1198)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:183)
+	at allocator.ParallelRunner.run(ParallelRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Exception in thread "pool-1-thread-2" java.lang.NullPointerException
+	at supportlibraries.DriverScript.qcOneTimeSetUp(DriverScript.java:1198)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:183)
+	at allocator.ParallelRunner.run(ParallelRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.NullPointerException
+	at allocator.Allocator.disconnectfromqc(Allocator.java:316)
+	at allocator.Allocator.driveBatchExecution(Allocator.java:83)
+	at allocator.Allocator.main(Allocator.java:58)

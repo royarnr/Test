@@ -1,0 +1,36 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Started InternetExplorerDriver server (32-bit)
+2.53.1.0
+Listening on port 43786
+Only local connections are allowed
+Started InternetExplorerDriver server (32-bit)
+2.53.1.0
+Listening on port 27940
+Only local connections are allowed
+Exception in thread "pool-1-thread-2" Exception in thread "pool-1-thread-1" com4j.ExecutionException: java.lang.NullPointerException
+	at com4j.ComThread.execute(ComThread.java:203)
+	at com4j.Task.execute(Task.java:39)
+	at com4j.Wrapper$InvocationThunk.invoke(Wrapper.java:324)
+	at com4j.Wrapper.invoke(Wrapper.java:163)
+	at com.sun.proxy.$Proxy4.connected(Unknown Source)
+	at supportlibraries.DriverScript.qcOneTimeSetUp(DriverScript.java:1215)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:183)
+	at allocator.ParallelRunner.run(ParallelRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com4j.Wrapper$InvocationThunk.call(Wrapper.java:335)
+	at com4j.Task.invoke(Task.java:51)
+	at com4j.ComThread.run0(ComThread.java:153)
+	at com4j.ComThread.run(ComThread.java:134)
+java.lang.NullPointerException
+	at com.sun.proxy.$Proxy4.connected(Unknown Source)
+	at supportlibraries.DriverScript.qcOneTimeSetUp(DriverScript.java:1215)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:183)
+	at allocator.ParallelRunner.run(ParallelRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
